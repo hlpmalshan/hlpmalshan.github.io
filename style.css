@@ -26,43 +26,6 @@ a,
   transition: all 300ms ease;
 }
 
-/* */
-.socials-center {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.social-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-}
-
-.icon {
-    width: 2rem;
-    height: 2rem;
-    transition: transform 0.3s ease;
-}
-
-.icon:hover {
-    transform: scale(1.1);
-}
-
-.social-link span {
-    font-weight: 600;
-}
-
-.social-link:hover span {
-    color: grey;
-}
-
-
 /* DESKTOP NAV */
 
 nav,
@@ -91,7 +54,7 @@ a {
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.2rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -101,6 +64,10 @@ a:hover {
 
 .logo:hover {
   cursor: default;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* HAMBURGER MENU */
@@ -208,8 +175,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  max-height: 400px;
+  max-width: 400px;
   margin: auto 0;
 }
 
@@ -224,11 +191,13 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  margin-bottom: 0.8rem;
 }
 
 .section__text__p2 {
   font-size: 1.25rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
 }
 
 .title {
@@ -305,6 +274,8 @@ section {
 }
 
 .about-containers {
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -318,6 +289,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  justify-content: center;
 }
 
 .about-pic {
@@ -331,13 +303,22 @@ section {
 }
 
 .details-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text inside */
   padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+}
+
+.details-container h3, 
+.details-container p {
+  text-align: center; /* Ensures text within h3 and p is centered */
 }
 
 .section-container {
@@ -349,6 +330,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  justify-content: center;
 }
 
 /* EXPERIENCE SECTION */
@@ -394,11 +376,33 @@ article .icon {
 
 #projects {
   position: relative;
+  display: flex;
+  flex-direction: column; /* Ensure the main container stacks its children vertically */
+  align-items: center; /* Center the project items */
+  text-align: justify;
+}
+
+.about-containers {
+  display: flex;
+  flex-direction: column; /* Stack project items vertically */
+  gap: 2rem; /* Add spacing between the project cards */
+  width: 100%; /* Allow the container to use full width */
+  text-align: justify;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: none; /* Remove flex-grow behavior */
+  width: 100%; /* Make the project card span the full width */
+  max-width: 800px; /* Optional: Set a maximum width for better layout */
+  background: white;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  text-align: justify;
+  margin: 0 auto; /* Center the details-container */
 }
 
 .color-container {
-  text-align: center;
-
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
@@ -417,6 +421,10 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.justified-text{
+  text-align: justify;
 }
 
 /* CONTACT */
@@ -459,11 +467,33 @@ article .icon {
   height: 2.5rem;
 }
 
+.project-media {
+  max-width: 100%; /* Ensures the image never exceeds the container width */
+  height: auto; /* Maintains the aspect ratio */
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: contain; /* Ensures the image fits without cropping */
+}
+
+.media-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.media-caption {
+  font-size: 0.9rem;
+  color: rgb(85, 85, 85);
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  min-height: fit-content;
+  padding: 2rem;
 }
 
 footer p {
@@ -501,13 +531,92 @@ iframe {
   border: 0;
 }
 
-.marc-link {
-    color: inherit; /* Keeps the same color as the surrounding text */
-    text-decoration: underline;
-    transition: color 0.3s ease;
+/* Publications Section */
+#publications {
+  position: relative;
+  padding-top: 4vh;
+  height: fit-content;
+  margin: 0 10rem;
+  box-sizing: border-box;
 }
 
-.marc-link:hover {
-    color: grey;
-    text-decoration: none;
+.publication-list {
+  list-style: decimal;
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  color: rgb(85, 85, 85);
 }
+
+.publication-list li {
+  margin-bottom: 1rem;
+}
+
+/* Update title for Publications */
+#publications .section-title {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(53, 53, 53);
+}
+
+.publication-list a {
+  color: blue;
+  text-decoration: none;
+}
+
+.publication-list a:hover {
+  text-decoration: underline;
+}
+
+#beyond-academia .beyond-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.beyond-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.beyond-images {
+  display: flex;
+  flex-direction: row;
+  gap: 0.01rem;
+  position: relative;
+}
+
+.beyond-images img:first-child {
+  transform: translateX(-5px); /* Offset for top image */
+}
+
+.beyond-images img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.beyond-text h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.beyond-text p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.beyond-video {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+
+
+
