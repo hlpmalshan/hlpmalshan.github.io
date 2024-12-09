@@ -16,7 +16,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#socialWork">Social Work</a></li>
+          <li><a href="#beyondAcademia">Beyond Academia</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -24,7 +24,7 @@
     <nav id="hamburger-nav">
       <div class="logo">Pasindu Malshan</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle navigation menu">
           <span></span>
           <span></span>
           <span></span>
@@ -33,29 +33,32 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#socialWork" onclick="toggleMenu()">Social Work</a></li>
+          <li><a href="#beyondAcademia" onclick="toggleMenu()">Beyond Academia</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/msg-396742776-8973.png" alt="Pasindu Malshan profile picture" />
+        <img
+          src="./assets/ViDula Shishan Photography-1548 1_1.jpg"
+          alt="Profile picture"
+          class="about-pic"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Pasindu Malshan</h1>
-        <p class="section__text__p2">Research Assistant</p>
-        <p class="section__text__p1" style="margin-top: -0.5rem;">
-        at <a href="https://marcuop.netlify.app/" target="_blank" class="marc-link">Multidisciplinary AI Research Center (MARC)</a></p>
-        </div>
-        <p class="section__text__p2">Electrical and Electronic Engineering Graduate</p>
-        <p class="section__text__p1" style="margin-top: -0.5rem;">from University of Peradeniya, Sri Lanka</p>
-
+        <p class="section__text__p2"> <strong>Research Assistant</strong> </p>
+        <p class="section__text__p1">  at the 
+          <a href="https://marcuop.netlify.app/" target="_blank" style="color: grey; text-decoration: underline;">Multidisciplinary AI Research Centre (MARC)</a>
+        </p>
+         <p class="section__text__p2">BSc (Eng) Electrical and Electronic Engineering</p>
+        <p class="section__text__p1">University of Peradeniya, Sri Lanka</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/Academic_Resume_HLP_Malshan.pdf')"
+            onclick="window.open('https://drive.google.com/file/d/1rze9XypeZwlwN6LnhJwRAEeE7H2fFf56/view?usp=drive_link')"
           >
             Download CV
           </button>
@@ -66,16 +69,18 @@
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="LinkedIn"
+            alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/pasindu-malshan-166a7a178'"
           />
+          <a href="https://www.linkedin.com/in/pasindu-malshan-166a7a178" target="_blank" style="color: black;">LinkedIn</a>
           <img
-            src="./assets/youtube.png"
-            alt="YouTube"
+            src="./assets/google-scholar-50.png"
+            alt="My Google Scholar profile"
             class="icon"
-            onclick="location.href='https://www.youtube.com/@pastpapertv'"
+            onclick="location.href='https://scholar.google.com/citations?user=EK2iiD8AAAAJ&hl=en&authuser=3'"
           />
+          <a href="https://scholar.google.com/citations?user=EK2iiD8AAAAJ&hl=en&authuser=3" target="_blank" style="color: black;">Google Scholar</a>
         </div>
       </div>
     </section>
@@ -83,13 +88,15 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
+        <!--
         <div class="section__pic-container">
           <img
-            src="./assets/Portfolio 2.png"
+            src="./assets/ViDula Shishan Photography-1548 1_1.jpg"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
+      -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -98,8 +105,8 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Eduacation</h3>
-              <p>B.Sc. Engineering (UG)  <br />Electrical and Electronic Engineering</p>
+              <h3>Education</h3>
+              <p>B.Sc. Engineering <br />Electrical and Electronic Engineering <br />University of Peradeniya, Sri Lanaka </p>
             </div>
             <div class="details-container">
               <img
@@ -107,13 +114,13 @@
                 alt="Education icon"
                 class="icon"
               />
-              <h3>Teaching Experience</h3>
-              <p>4+ years<br />GCE Advanced Level<br />Pearson Edexcel A/Level</p>
+              <h3>Professional Experience</h3>
+              <p>Research Assistant : Apr 2024 - Present <br />Teaching Assistant : Jan 2024 - Mar 2024</p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="justified-text">
             <p>
-                I am a student studying electrical and electronic engineering who loves learning and figuring out how things work. I enjoy working on real projects and have experience with both software and hardware solutions. I am not only passionate about learning but also about sharing what I know with others. Over the years, I have gained experience in imparting knowledge to my peers. I believe in the importance of spreading information and helping others understand complex concepts. Whether it is through group projects or informal discussions, I take joy in sharing what I have learned to contribute to a collaborative and supportive learning environment. As I have gone through school and university, I have learned how to communicate well, manage my time, and take the lead in projects. I can take on responsibilities and work with little supervision.
+              I am an Electrical and Electronic Engineering student with a passion for research and discovery, particularly in using mathematics and signal processing to enhance machine learning and deep learning models. My academic projects, spanning both software and hardware solutions, have strengthened my analytical and experimental skills. I enjoy tackling complex problems and sharing insights to foster collaboration and innovation. Through my research experiences, I have developed strong project management, communication, and leadership skills, enabling me to contribute effectively to advancing knowledge in my field.
             </p>
           </div>
         </div>
@@ -124,175 +131,94 @@
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MatLab</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>R Language</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Arduino</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Packages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Microsoft Office</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Adobe Photoshop</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Adobe Premiere Pro</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Auto CAD</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="bittersweet">
-      <p class="section__text__p1">Watch</p>
-      <h1 class="title">BitterSweet</h1>
-      <div class="video-container">
-        <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube-nocookie.com/embed/LEnqh4Oiv3M?si=j_p3BtZjRfBRLaiy" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-      </iframe>
-      </div>
-    </section>
-    
+      <section id="publications">
+        <h2 class="section-title">Publications</h2>
+        <ol class="publication-list">
+          <li>
+            <strong>Improving Diffusion Probabilistic Models using the Isotropy of the Additive Gaussian Noise </strong> (<a href="https://doi.org/10.48550/arXiv.2403.16790" target="_blank">preprint</a>) - 
+            Dilum Fernando, Shakthi Perera, Pathum Madushan, <strong>H.L.P. Malshan</strong>, Roshan Godaliyadda, Mervyn Parakrama Bandara Ekanayake, Vijitha R. Herath, Dhananjaya Jayasundara, Welagedara Chaminda Bandara - Conference on Computer Vision and Pattern Recognition (CVPR) 2025 (Under Review)
+            
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.jafr.2024.101401" target="_blank">Aflatoxin Contamination Level Estimation in Food using Reflectance Multispectral Imaging Based System</a> - 
+            <strong>H.L.P. Malshan</strong>, H.M.P.S. Madushan, K.K. Abewickrama, H.M.V.R. Herath, Roshan Godaliyadda, M.P.B. Ekanayake, A.D.S.N.P. Athukorala, M.D.H.M. Kumari, Darsha Udayanga - 
+            Journal of Agriculture and Food Research - 2024
+          </li>
+          <li>
+            <a href="https://ieeexplore.ieee.org/document/10444559" target="_blank">Dual Mode Multispectral Imaging System for Food and Agriculture Product Quality Estimation</a> -  
+            Darsha Udayanga, Ashan Serasinghe, Supun Dassanayake, Roshan Godaliyadda, H.M.V.R. Herath, Mervyn Parakrama Ekanayake, <strong>H.L.P. Malshan</strong> - 
+            IEEE Transactions on Instrumentation and Measurement - 2024
+          </li>
+        </ol>
+      </section>
+  
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Browse My Ongoing</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-            <h2 class="experience-sub-title project-title">Multispectral Imaging</h2>
-              <p class="project-description">
-              Developed a method to monitor the changes in different substances from multispectral imaging.
-              Following are the used technologies: Python, Numpy, OpenCV.
-              Following are the used techniques: Image Preprocessing (Median Filtering, Bilateral Filtering), Dimension Reduction (PCA, LDA), Data Classification (Logistic Regression, SVM, Decision Tree, KNN), Statistical Parameters (Bhattacharyya Distance, KL Divergence)
-              </p>
+            <h2 class="experience-sub-title project-title">Improving Denoising Diffusion Probabilistic Model (DDPM)</h2>
+            <div class="justified-text"> 
+              One of our key findings regarding Diffusion Models is that while the model tends to follow a trajectory where isotropy increases, it does not explicitly ensure this condition. Therefore, the aim of this project is to enhance the training process of Diffusion Models by guiding the model to follow directions that actively promote greater isotropy in the generated samples.
+            </div>
+              <div class="media-container">
+                <video controls class="project-media">
+                  <source src="./assets/Central Banana.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p class="media-caption">Visualization of the change in data distribution and the variation of the isotrpy in the forward and reverse processes</p>
+              </div>
+              <!-- Image -->
+              <div class="media-container">
+                <img src="./assets/Gaussian Boundary Cross V1.png" alt="Generated Samples from DDPM" class="project-media" />
+                <p class="media-caption">Variation of isotropy with time steps in the forward process</p>
+              </div>
+              <div class="justified-text">
+                Using this approach, we improved the DDPM model and got some interesting results that show how well our changes work.
+              </div>
+              <div class="justified-text">
+                In addition, we used Precision, Recall, Density, and Coverage, along with Frechet Inception Distance (FID) and Inception Score (IS), to measure the fidelity and diversity of the generated samples. These metrics helped us create more visualizations and gain better insights into the data distribution generation of both the original DDPM and our improved version. This highlights the importance of these new fidelity and diversity metrics for the research community and encourages further exploration of similar measures.
+              </div>
+              <div class="justified-text">
+                The figures below illustrate how our improved algorithm enables the DDPM to better capture the structural details of the original data distribution and maintain the key semantics of the original distribution during the generation process.
+              </div>
+              <div class="media-container">
+                <img src="./assets/Density Plot Center Banana V3.png" alt="Center Banana Generated Samples from DDPM" class="project-media" />
+                <p class="media-caption">Central Banana 2D synthetic dataset: (a) True distribution points, colored based on the k = 5 nearest neighbor radius. (b) Points generated by DDPM, colored according to their true manifold span. (c) Points generated by Iso-Diffusion, colored according to their true manifold span.</p>
+              </div>
+              <div class="media-container">
+                <img src="./assets/Density Plot Scattered Moon V3.png" alt="Scattered Moon Generated Samples from DDPM" class="project-media" />
+                <p class="media-caption">Scattered Moon 2D synthetic dataset: (a) True distribution points, colored based on the k = 5 nearest neighbor radius. (b) Points generated by DDPM, colored according to their true manifold span. (c) Points generated by Iso-Diffusion, colored according to their true manifold span.</p>
+              </div>
+              <div class="media-container">
+                <img src="./assets/Density Plot Swiss Roll V3.png" alt="Swiss Roll Generated Samples from DDPM" class="project-media" />
+                <p class="media-caption">Swiss Roll 2D synthetic dataset: (a) True distribution points, colored based on the k = 5 nearest neighbor radius. (b) Points generated by DDPM, colored according to their true manifold span. (c) Points generated by Iso-Diffusion, colored according to their true manifold span.</p>
+              </div>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-            <h2 class="experience-sub-title project-title">Smart Key Chain</h2>
+            <h2 class="experience-sub-title project-title">Multispectral Imaging for Condition Monitoring </h2>
             <p class="project-description">
-              Designed and manufactured a comprehensive smart key chain solution for locating misplaced objects. Following are the used technologies: Arduino Microcontroller, ESP8266 Wifi Module, Android Studio
-            </p>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-            <h2 class="experience-sub-title project-title">High Speed Traffic Indicator</h2>
-            <p class="project-description">
-              Designed and simulated a high-speed traffic indicator which can identify vehicles speed and indicate warnings. Following are the used technologies: PIC 16F877A Microcontroller, IR Sensors, Assembly Language
+              <div class="justified-text">
+              We have developed a Multispectral Imaging device including 13 spectral band spanning wavelengths from 360nm to 940nm.
+              </div>
+              <div class="media-container">
+                <img src="./assets/Device Cross Section with both modes.png" alt="Device Cross Section with both modes" class="project-media" />
+                <p class="media-caption">Cross section of the multispectral imaging device.</p>
+              </div>
+              <div class="justified-text">
+                The image capturing environment exhibited non-uniform intensity across the captured images, primarily due to misalignment between the reflective hemisphere and the monochrome camera in reflectance mode. To address this, a spatial correction was applied to ensure consistent intensity across the image plane. Furthermore, intensity variations were observed across different spectral bands, which were caused by inconsistencies in the illumination provided by the LEDs. To mitigate this issue, a spectral correction was performed, ensuring uniformity in the captured intensity across all spectral bands.
+              </div>
+              <div class="media-container">
+                <img src="./assets/Intensity Comparison 473nm 3.png" alt="Intensity comparison" class="project-media" />
+                <p class="media-caption">Pixel intensity comparison among raw, spatially and spectrally corrected images.</p>
+              </div>
+              <div class="justified-text">
+                Currently, we are working on these algorithms to enhance the correction process and to make it robust.
+              </div>
             </p>
             </div>
           </div>
@@ -305,8 +231,81 @@
         onclick="location.href='./#contact'"
       />
     </section>
-
-
+  
+    <section id="beyond-academia">
+      <p class="section__text__p1">This is what I do</p>
+      <h1 class="title">Beyond Academia</h1>
+      <div class="beyond-container">
+        <div class="beyond-item">
+          <div class="beyond-images">
+            <img src="assets\AI Awarenes Session 3.jpg" alt="AI Awareness Program">
+            <img src="assets\AI Awarenes Session 2.jpg" alt="AI Awareness Program Alternate">
+          </div>
+          <div class="beyond-text">
+            <h3>A Journey into AI:</h3>
+            <div class="justified-text">
+              Participated in the AI awareness program organized by the Multidisciplinary AI Research Centre at 
+              the University of Peradeniya. Delivered an engaging session by introducing school students to the f
+              undamentals of Artificial Intelligence, its real-world applications, and its potential to shape the 
+              future. The session aimed to inspire the next generation of innovators in AI.
+            </div>
+            <p style="color: black;">Sessions held so far: </p>
+            <p><a href="https://www.facebook.com/share/p/19tmmtC9qo/" target="_blank" style="color: blue;"> Kandy Session</a>, 
+              <a href="https://www.facebook.com/share/p/18T6qXRsJT/" target="_blank" style="color: blue;"> Colombo Session</a></p>
+          </div>
+        </div>
+        <div class="beyond-item">
+          <div class="beyond-images">
+            <img src="assets\Portfolio 2.png" alt="YouTube Channel">
+            <img src="assets\Youtube Logo.png" alt="YouTube Channel Alternate">
+          </div>
+          <div class="beyond-text">
+            <h3>YouTube Channel for Advanced Level Students</h3>
+            <div class="justified-text">
+              Launched a YouTube channel named <a href="https://www.youtube.com/@pastpapertv" target="_blank" style="color: blue;">Past Paper TV</a> 
+              during the COVID-19 pandemic to support Advanced Level students studying Mathematics. 
+              Created engaging and comprehensive video lessons, helping students navigate challenging concepts and prepare 
+              effectively for exams. The channel has grown to over 75,000 subscribers, becoming a trusted resource for learners nationwide.
+            </div>
+          </div>
+        </div>
+        <div class="beyond-item">
+          <div class="beyond-images">
+            <img src="assets\Hair Donation 1.jpg" alt="Hair Donation">
+            <img src="assets\Hair Donation 2.jpg" alt="Hair Donation Alternate">
+          </div>
+          <div class="beyond-text">
+            <h3>Hair Donation for Cancer Patients</h3>
+            <div class="justified-text">Donated hair to the <a href="https://www.littleprincesses.org.uk/" target="_blank" style="color: blue;">Little Princess Trust</a> to support the creation of wigs for children and young people 
+              battling cancer. This heartfelt contribution aimed to bring comfort and confidence to those facing challenging circumstances.</div>
+          </div>
+        </div>
+        <div class="beyond-item">
+          <div class="beyond-video">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/LEnqh4Oiv3M?si=j_p3BtZjRfBRLaiy" 
+              title="Bittersweet - Short Movie" 
+              width="150px" 
+              height="150px" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="beyond-text">
+            <h3>Bittersweet - Short Movie</h3>
+            <div class="justified-text">Produced "Bittersweet," a short film during my undergraduate studies as part of the "Introduction to Digital Art"
+              course. The story follows a university student's journey, highlighting how the decisions we make shape our experiences.
+              It emphasizes that life’s sweetness or bitterness is in our hands, encouraging viewers to take responsibility for their
+              own happiness rather than blaming others.
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
